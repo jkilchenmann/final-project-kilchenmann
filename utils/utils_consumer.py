@@ -13,8 +13,8 @@ Consumers subscribe to a topic and read messages from the Kafka topic.
 from kafka import KafkaConsumer
 
 # Import functions from local modules
-from .utils_config import get_kafka_broker_address
-from .utils_logger import logger
+from utils.utils_logger import logger
+from .utils_producer import get_kafka_broker_address
 
 
 #####################################

@@ -51,7 +51,7 @@
 
 ### Windows Command (don't include the #):
 # py -m pip install --upgrade pip setuptools wheel
-# py -m pip install --upgrade -r requirements.txt
+# py -m pip install -r requirements.txt
 
 ### Mac/Linux Command (don't include the #):
 # python3 -m pip install --upgrade pip setuptools wheel
@@ -89,27 +89,18 @@ loguru
 python-dotenv
 
 # ======================================================
+# DATA ANALYSIS AND VISUALIZATION
+# ======================================================
+
+# Numerical computations
+numpy
+
+# Data manipulation and analysis
+pandas
+
+# ======================================================
 # KAFKA MESSAGE BROKER INTEGRATION
 # ======================================================
 
-six
-kafka-python-ng
-
-# ======================================================
-# DATABASE INTEGRATION 
-# ======================================================
-
-# sqlite3 is part of Python Std Lib - no need to install it 
-# Other popular tools include the following.
-
-# SQLAlchemy - SQL toolkit and Object-Relational Mapping (ORM) library
-# Uncomment the line below to install SQLAlchemy.
-# SQLAlchemy
-
-# psycopg2 - PostgreSQL database adapter for Python
-# Uncomment the line below to install psycopg2.
-# psycopg2
-
-# PyMySQL - MySQL client library
-# Uncomment the line below to install PyMySQL.
-# PyMySQL
+# Apache Kafka Python client
+kafka-python

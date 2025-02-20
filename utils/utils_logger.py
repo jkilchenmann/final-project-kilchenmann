@@ -4,16 +4,11 @@ File: utils/utils_logger.py
 
 This script provides logging functions for the project. 
 Logging is an essential way to track events and issues during execution. 
-This file can be used without modification. 
 
 Features:
 - Logs information, warnings, and errors to a designated log file.
 - Ensures the log directory exists.
 """
-
-#####################################
-# Imports
-#####################################
 
 # Imports from Python Standard Library
 import pathlib
