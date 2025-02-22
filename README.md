@@ -37,7 +37,7 @@ source .venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
 python3 -m pip install --upgrade -r requirements.txt
 python3 -m pip install matplotlib
-
+```
 
 ## Task 2. Start Zookeeper and Kafka (Takes 2 Terminals)
 
