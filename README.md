@@ -2,7 +2,7 @@
 
 ## Task 1. Setup
 
-# Manage Our Local Project Virtual Environment
+Manage Our Local Project Virtual Environment
 
 After copying/forking this project and installing it locally,
 use the built in venv utility to create a local project virtual environment in a folder named .venv. 
