@@ -45,12 +45,14 @@ If Zookeeper and Kafka are not already running, you'll need to restart them.
 
 1. Start Zookeeper Service 
 
-```cd ~/kafka
+```shell
+cd ~/kafka
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 2. Start Kafka Service 
 
-```cd ~/kafka
+```zsh
+cd ~/kafka
 bin/kafka-server-start.sh config/server.properties
 ```
 ---
