@@ -30,13 +30,13 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("SMOKER_TOPIC", "unknown_topic")
+    topic = os.getenv("TUTOR_TOPIC", "tutor_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 def get_kafka_consumer_group_id() -> str:
     """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("SMOKER_CONSUMER_GROUP_ID", "default_group")
+    group_id: str = os.getenv("TUTOR_CONSUMER_GROUP_ID", "default_group")
     logger.info(f"Kafka consumer group id: {group_id}")
     return group_id
 
@@ -75,7 +75,6 @@ def process_messages(consumer):
         logger.warning("Consumer interrupted by user.")
     except Exception as e:
         logger.error(f"Error while consuming messages: {e}")
-        # Optionally, add logic to attempt reconnect or cleanup
     finally:
         try:
             consumer.close()
@@ -116,10 +115,10 @@ def main():
     topic = get_kafka_topic()
     group_id = get_kafka_consumer_group_id()
     logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
-    
+
     consumer = create_kafka_consumer(topic, group_id)
     logger.info(f"Polling messages from topic '{topic}'...")
-    
+
     process_messages(consumer)
 
 if __name__ == "__main__":
